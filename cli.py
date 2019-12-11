@@ -3,7 +3,7 @@ from post_fetcher import fetch_posts
 
 
 def get_posts(args):
-    fetch_posts(args.posts)
+    posts = fetch_posts(args.posts)
 
 
 def check_value_within_range(value):

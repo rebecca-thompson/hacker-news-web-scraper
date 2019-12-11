@@ -9,4 +9,7 @@ A command-line tool that scraps the Hacker News website and returns information 
 ## To Run Tests
 
 1. In the project root, run `./run-tests.sh`
+Note: To run tests locally you will need to have Python3 installed and run `pip install -r requirements.txt` in the project root
 
+## To Run in Docker
+`docker run hacker-news --posts 12`
