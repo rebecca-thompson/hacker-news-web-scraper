@@ -1,7 +1,9 @@
 import argparse
+from post_fetcher import fetch_posts
+
 
 def get_posts(args):
-    print(args.posts)
+    fetch_posts(args.posts)
 
 
 def check_value_within_range(value):
@@ -27,6 +29,7 @@ def main():
 
     args = parser.parse_args()
     args.func(args)
+
 
 if __name__ == '__main__':
     main()
