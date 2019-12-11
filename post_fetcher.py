@@ -79,8 +79,7 @@ def get_author(element):
 
 def get_points(element):
     points = strip_non_numeric_characters(get_html_element_text_by_class(element, "span", "score"))
-    if points is not None:
-        if int(points) >= 0:
+    if points is not None and points != "" and int(points) >= 0:
             return int(points)
     else:
         return None

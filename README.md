@@ -7,9 +7,9 @@ This tool scraps Hacker News (https://news.ycombinator.com/news) and parses the 
 into the following object structure:
 
  {  'author': 'a-name',
-    'comments': '0',
-    'points': '0',
-    'rank': '0',
+    'comments': 0,
+    'points': 0,
+    'rank': 0,
     'title': 'a-title',
     'uri': 'a-url'
   }

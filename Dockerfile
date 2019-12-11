@@ -4,8 +4,8 @@ ADD cli.py /
 ADD post_fetcher.py /
 ADD constants.py /
 
-ADD requirements.txt /
-
-RUN pip install -r requirements.txt
+RUN pip install requests
+RUN pip install bs4
+RUN pip install pprint
 
 ENTRYPOINT ["python", "./cli.py"]
